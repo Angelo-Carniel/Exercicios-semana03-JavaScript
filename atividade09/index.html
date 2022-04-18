@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function addZero(i) {
+  if (i < 10) {i = "0" + i}
+  return i;
+}
+    let data = new Date();
+    let hora = addZero(data.getHours());
+    let min = addZero(data.getMinutes());
+    let horaMin = hora + ':' + min;
+    window.alert(`Horário de acesso: ${horaMin}`);
+</script>
+<body>
+    <h1>Atividade 09</h1>
+    <p>Construa um script que alerta o horário no momento de acesso, no formato “23:59” (HH:mm). Use o objeto Date do JavaScript.</p>
+</body>
+</html>
